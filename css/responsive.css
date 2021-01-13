@@ -115,7 +115,10 @@
 @media only screen and (max-width: 991px)
 {
     
-
+/* NAVBAR STYLE  */
+.navbar{
+    background-color:#fff; 
+  }
     
 	
 }
@@ -144,6 +147,8 @@
 
 @media only screen and (max-width: 768px)
 {
+
+    
 	/* CARASOUL  */
     .carousel-item .main-title{
    
@@ -209,16 +214,7 @@
 
 @media only screen and (max-width: 767px)
 {
-   /* NAVBAR STYLE  */
-   .navbar {
-    position:absolute;
-    top:0px;
-    z-index:10;
-    
-    width:100%;
-    
    
-}
 /* SITE FOOTER STYLE  */
 .site-footer
   {
