@@ -16,6 +16,7 @@
 
   /* NAVBAR STYLES  */
   
+  /* Animate the hamburger logo  */
 .navbar-dark .navbar-toggler span {
   display: block;
   width: 30px;
@@ -44,7 +45,7 @@
   transform: none;
   opacity: 1;
 }
-  
+  /* End of Animate the hamburger logo  */
 .header{
     position: relative;
 }
@@ -57,7 +58,10 @@
     z-index:10;
     width:100%;
 }
-
+/* Remove dropdown arrow  */
+.dropdown-toggle::after {
+  display: none;
+}
 
 .navbar-brand img {
     width: 70px;
