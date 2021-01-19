@@ -1097,43 +1097,43 @@ color: #8a3ab9
 
 
 
-.product-filter-ft-orange .customize-color {
+#s-36 {
   background-color: #dd9933;
 }
 
-.product-filter-ft-purple .customize-color{
+#s-37{
   background-color: #8224e3;
 }
-.product-filter-ft-black .customize-color{
+#s-38{
   background-color: #000;
 }
 
-.product-filter-ft-blue .customize-color{
+#s-39{
   background-color: #4472a3;
 }
-.product-filter-ft-brown .customize-color{
+#s-3xl{
   background-color: #987b6a;
 }
-.product-filter-ft-gray .customize-color {
+#s-40 {
   background-color: #878787;
 }
-.product-filter-ft-green .customize-color{
+#s-41{
   background-color: #7fab5c;
 }
 
-.product-filter-ft-pink .customize-color{
+#s-42{
   background-color: #e000e0;
 }
 
-.product-filter-ft-red .customize-color{
+#s-43{
   background-color: #e12300;
 }
 
-.product-filter-ft-white .customize-color{
+#s-44{
   background-color: #ffffff;
 }
 
-.product-filter-ft-yellow .customize-color{
+#s-xs{
   background-color: #ffc84b;
 }
 
@@ -1142,8 +1142,8 @@ color: #8a3ab9
 }
 
 .product-filter-colors label{
-  position: absolute;
-  top: -4px;
+  /* position: absolute; */
+  /* top: -4px; */
 }
 
 
@@ -1158,5 +1158,9 @@ color: #8a3ab9
 .s-43,
 .s-44,
 .s-xs{
+  /* display: none; */
+}
+
+label.customize-color{
   display: none;
 }
