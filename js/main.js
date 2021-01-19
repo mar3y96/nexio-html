@@ -53,4 +53,94 @@ function getVals(){
 
 
 
+
+  // SUBPRODUCT PAGE 
+
+  $('.thumbnail').on('click', function() {
+    var clicked = $(this);
+    var newSelection = clicked.data('big');
+    var $img = $('.primary-img').css("background-image","url(" + newSelection + ")");
+    clicked.parent().find('.thumbnail').removeClass('selected');
+    clicked.addClass('selected');
+    $('.primary-img').empty().append($img.hide().fadeIn('slow'));
+  });
+ 
+
+
+  //colors with sizes (show & hide)
+
+  $(document).ready(function(){
+    $(".show-none").click(function(){
+      $(".s-36,.s-37,.s-38,.s-39,.s-3xl,.s-40,.s-41,.s-42,.s-43,.s-44,.s-xs").css("display", "none");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-36").click(function(){
+      $(".s-36").css("display", "block");
+      // $(".s-37,.s-38,.s-39,.s-3xl,.s-40,.s-41,.s-42,.s-43,.s-44,.s-xs").css("display", "none");
+    });
+  });
+  $(document).ready(function(){
+    $(".show-37").click(function(){
+      $(".s-37").css("display", "block");
+      // $(".s-36,.s-38,.s-39,.s-3xl,.s-40,.s-41,.s-42,.s-43,.s-44,.s-xs").css("display", "none");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-38").click(function(){
+      $(".s-38").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-39").click(function(){
+      $(".s-39").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-3xl").click(function(){
+      $(".s-3xl").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-40").click(function(){
+      $(".s-40").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-41").click(function(){
+      $(".s-41").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-42").click(function(){
+      $(".s-42").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-43").click(function(){
+      $(".s-43").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-44").click(function(){
+      $(".s-44").css("display", "block");
+    });
+  });
+  
+  $(document).ready(function(){
+    $(".show-xs").click(function(){
+      $(".s-xs").css("display", "block");
+    });
+  });
+  
+  
   
