@@ -753,3 +753,80 @@ border-bottom: 1px solid #000;
 
 
 
+/* LOGIN AND REGISTER FORM */
+
+.login-icon{
+    font-size: 37px;
+    color: #000;
+    margin: 0 auto 22px auto;
+    text-align: center;
+    display: block;
+    width: 108px;
+    height: 108px;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 2px solid #e4e6ec;
+}
+
+.desc-login,
+.desc-register{
+  margin: 0 0 26px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 28px;
+    color: #aaa;
+}
+.login{
+  overflow: hidden;
+}
+#email-login,
+#password-login,
+#email-reg,
+#password-reg,
+#password-confirmation{
+    border: 1px solid #dadada;
+    padding: 0 20px;
+    max-width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    color: #979797;
+    height: 56px;
+    line-height: 56px;
+    outline: none;
+}
+#password-login,
+#password-reg,
+#password-confirmation{
+  margin-top: 15px;
+}
+.btn-login,
+.btn-register{
+  width: 100%;
+    letter-spacing: 0.2em;
+    height: 48px;
+    margin-top: 15px;
+    
+    text-transform: uppercase;
+    display: inline-block;
+    
+    line-height: 56px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 15px;
+    background: #000000;
+    border: none;
+}
+
+.login-footer a,
+.register-footer a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 0;
+    line-height: inherit;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    padding-bottom: 2px;
+    color: #000000;
+}

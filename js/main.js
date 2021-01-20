@@ -70,9 +70,7 @@ function getVals(){
   //colors with sizes (show & hide)
 
   $(document).ready(function(){
-    $(".show-none").click(function(){
-      $(".s-36,.s-37,.s-38,.s-39,.s-3xl,.s-40,.s-41,.s-42,.s-43,.s-44,.s-xs").css("display", "none");
-    });
+   
   });
   
   // $(document).ready(function(){
@@ -148,12 +146,14 @@ function getVals(){
 
   // Variable which keeps track of which color is currently visible
 var visibleColors = null;
-
+var avaColorsSpan = 'ava-colors';
 function onLinkClicked(event) {
   console.log(event);
   // Get the id of the link that was clicked.
-  var linkName = event.currentTarget.className;
+  var linkName = event.currentTarget.id;
   console.log(linkName);
+  // let id = parseInt(linkName);
+  // console.log(id)
 
   // Strip off the '-link' from the end of the linkName
   var dashIndex = linkName.indexOf('-link');
@@ -165,17 +165,20 @@ function onLinkClicked(event) {
   console.log(5+5);
   showApp(appName);
 }
-
+ 
 
 function showApp(appNameToShow) { 
   console.log(5+5);
   // Hide the currently visible app (if there is one!)
   if (visibleColors !== null) {
-      $('#' + visibleColors).hide();
+      $('.' + visibleColors).hide();  
   }
 
+    //show ava colors span
+    $('.' + avaColorsSpan).show(); 
+    
   // And show the one passed
-  $('#' + appNameToShow).show();
+  $('.' + appNameToShow).show();
 
   // Update the visibleApp property.
   visibleColors = appNameToShow;
@@ -183,9 +186,87 @@ function showApp(appNameToShow) {
 
 // $(document).ready waits for the page to finish rendering
 $(document).ready(function () {
+  $('#s-none-link').click(function(){
+    $(".customize-color").hide();
+    visibleColors= null;
+    $('.' + avaColorsSpan).hide();
+  });
   // Walk through the Array of Apps and add a click handler to
   // it's respective link.
   colors.forEach(function(name) {
-      $('.' + name + '-link').on('click', onLinkClicked);
+      $('#' + name + '-link').on('click', onLinkClicked);
   });
 });    
+
+
+
+
+  
+
+
+
+
+
+function showRegisterForm(){
+  $('.loginBox').fadeOut('fast',function(){
+      $('.registerBox').fadeIn('fast');
+      $('.login-footer').fadeOut('fast',function(){
+          $('.register-footer').fadeIn('fast');
+      });
+     
+  }); 
+  $('.error').removeClass('alert alert-danger').html('');
+     
+}
+function showLoginForm(){
+  $('#loginModal .registerBox').fadeOut('fast',function(){
+      $('.loginBox').fadeIn('fast');
+      $('.register-footer').fadeOut('fast',function(){
+          $('.login-footer').fadeIn('fast');    
+      });
+      
+      
+  });       
+   $('.error').removeClass('alert alert-danger').html(''); 
+}
+
+function openLoginModal(){
+  showLoginForm();
+  setTimeout(function(){
+      $('#loginModal').modal('show');    
+  }, 230);
+  
+}
+function openRegisterModal(){
+  showRegisterForm();
+  setTimeout(function(){
+      $('#loginModal').modal('show');    
+  }, 230);
+  
+}
+
+function loginAjax(){
+  /*   Remove this comments when moving to server
+  $.post( "/login", function( data ) {
+          if(data == 1){
+              window.location.replace("/home");            
+          } else {
+               shakeModal(); 
+          }
+      });
+  */
+
+/*   Simulate error message from the server   */
+   shakeModal();
+}
+
+function shakeModal(){
+  $('#loginModal .modal-dialog').addClass('shake');
+           $('.error').addClass('alert alert-danger').html("Invalid email/password combination");
+           $('input[type="password"]').val('');
+           setTimeout( function(){ 
+              $('#loginModal .modal-dialog').removeClass('shake'); 
+  }, 1000 ); 
+}
+
+ 
