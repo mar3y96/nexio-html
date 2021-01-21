@@ -164,12 +164,17 @@
     table-layout: auto;
     width: 100%;
     margin-bottom: 20px;
+    margin: 0;
+  padding: 0;
+  /* table-layout: fixed; */
+  
 }
 .shop-table thead{
     border: 1px solid #ebebeb;
     
     
 }
+
 .shop-table thead th {
     font-weight: 600;
     font-size: 12px;
@@ -183,6 +188,9 @@
 }
 td{
     padding: 25px 20px;
+}
+.table td{
+  vertical-align: middle;
 }
 .product-thumbnail{
     
@@ -245,4 +253,368 @@ td{
     color: #6f6f6f;
     display: inline-block;
     height: 25px;
+    text-decoration: none;
   }
+  .remove:hover{
+    color: red;
+    text-decoration: none;
+  }
+
+  /* ACTIONS BUTTONS  */
+  .actions-btn{
+    text-align: right;
+    margin-bottom: 19px;
+    padding-right: 40px;
+    margin-top: 10px;
+  }
+  .update-btn{
+    opacity: 0.65 !important;
+    cursor: not-allowed;
+    border: 0;
+    font-weight: 600;
+    min-width: 275px;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+    line-height: 58px;
+    height: 56px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #595959;
+    transition: color 0.25s, border-color 0.25s, background-color 0.25s, opacity 0.25s, width 0.25s ease 0s;
+  }
+  .shopping-btn{
+    font-weight: 600;
+    min-width: 275px;
+    height: 56px;
+    line-height: 58px;
+    text-align: center;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    
+    margin-right: 5px;
+    transition: background-color 0.25s;
+    text-decoration: none;
+  }
+  .shopping-btn:hover{
+    text-decoration: none;
+    background-color: #dd3b3b;
+    color: #ffffff;
+  }
+
+  /* Coupon btn  */
+  .coupon-label{
+    font-weight: 700 !important;
+    font-size: 12px;
+    line-height: 56px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    display: inline-block;
+    text-align: start;
+    float: left;
+  }
+
+  .input-coupon{
+    border-color: #e5e5e5;
+    border: 1px solid #dadada;
+    padding: 0 20px;
+    width: calc(100% - 377px);
+    background-color: transparent;
+    font-size: 14px;
+    color: #979797;
+    height: 56px;
+    line-height: 56px;
+    outline: none;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    
+  }
+  .coupon-btn-div{
+    text-align: right;
+    
+    margin-right: 5px;
+  }
+  .apply-coupon-btn{
+    font-weight: 600;
+    min-width: 275px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    padding: 0 15px;
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    margin-left: 9px;
+    margin-right: 35px;
+    transition: background-color 0.25s;
+    text-decoration: none;
+    border: none;
+    margin-bottom: 20px;
+  }
+  .apply-coupon-btn:hover{
+    background-color: #4BB543;
+    text-decoration: none;
+  }
+
+
+  /* TOTAL SECTION  */
+  .cart-total-cont{
+    margin-bottom: 30px;
+  }
+  .cart-total{
+    border: 2px solid #e3e3e3;
+    padding: 41px 40px 63px 40px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+
+  .cart-total h3 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30px;
+    color: #000000;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    
+    padding: 17px 20px 17px 0;
+    margin-top: 0;
+    text-align: start;
+  }
+  .table-sub tr{
+    text-align: start;
+    border-width: 0 0 1px 0;
+    padding: 17px 0;
+    width: 50%;
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    border: 1px solid #ebebeb;
+  }
+  .table-sub tr th{
+    padding-left: 10px;
+  }
+
+  /* CHECKOUT BTN  */
+  .checkout{
+    text-align: start;
+    margin-top: 20px;
+  }
+  
+  .checkout a {
+    font-weight: 600;
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.25s;
+  }
+  .checkout a:hover{
+    text-decoration: none;
+    background-color: #4BB543;
+  }
+
+
+   /* FOOTER DESGIN  */
+
+ .newsletter-form-wrap{
+  position: relative;
+  margin-top: 20px;
+}
+.bank-div{
+  text-align: end;
+}
+.bank-img{
+  width: 215px;
+  height: 12px;
+  
+}
+.input-email-footer{
+  width: 100%;
+  height: 52px;
+  line-height: 52px;
+  color: #5e5e5e;
+  border: none;
+  padding-left:10px;
+  background-color: #2d2d2d;
+  
+}
+.input-email-footer:focus{
+outline: 0;
+}
+
+.btn-submit-footer{
+  background-color: #dd3b3b;
+  width: 79px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  font-size: 24px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: #fff;
+      transition: color 0.25s,background-color 0.25s;
+  
+}
+.btn-submit-footer:hover{
+  background-color: #fff;
+  color: #000;
+}
+.site-footer{
+background-color: #131313;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+
+
+.site-footer h6
+{
+  font-weight: 600;
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: .2em;
+  margin: 0 0 20px 0;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+.site-footer h6 span{
+  position: absolute;
+  left: 0;
+}
+.site-footer h6::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 23px;
+  border-bottom: 1px #fff solid;
+
+}
+.site-footer a
+  {
+    color:rgb(202, 201, 201);
+    transition: color 0.25s;
+  }
+.site-footer a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color: #ff4040;
+text-decoration:none;
+  }
+.footer-links
+{
+  text-align: start;
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:rgb(202, 201, 201);
+}
+
+.newsletter-footer-desc{
+  font-weight: 400;
+  font-size: 15px;
+  color: #aaa;
+  text-align: start;
+}
+
+.footer-links.inline li
+{
+display:inline-block
+}
+.site-footer .social-icons
+{
+text-align:start;
+}
+
+.copyright-text
+{
+text-align: start;
+}
+.banks-logos{
+  text-align: end;
+}
+
+
+.social-icons-footer
+{
+padding-left:0;
+margin-bottom:0;
+list-style:none
+}
+.social-icons-footer li
+{
+display:inline-block;
+margin-bottom:4px
+}
+.social-icons-footer li.title
+{
+margin-right:15px;
+text-transform:uppercase;
+color:#96a2b2;
+font-weight:700;
+font-size:13px
+}
+.social-icons-footer a{
+color:#818a91;
+font-size:16px;
+display:inline-block;
+line-height:44px;
+width:40px;
+text-align:start;
+margin-right:8px;
+-webkit-transition:all .2s linear;
+-o-transition:all .2s linear;
+transition:all .2s linear
+}
+.social-icons-footer a.twitter:hover
+{
+color: #00aced;
+}
+.social-icons-footer a.dribble:hover
+{
+color:#ea4c89 ;
+}
+
+.social-icons-footer a.behance:hover
+{
+color:#053eff
+}
+.social-icons-footer a.instagram:hover
+{
+color: #8a3ab9
+}
